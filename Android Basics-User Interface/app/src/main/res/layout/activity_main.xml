@@ -6,24 +6,45 @@
     android:layout_height="match_parent"
     tools:context="com.udc.enzoftware.birthdaycard.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:src="@drawable/upcLogo"
+        android:scaleType="centerInside"
+        android:id="@+id/headerUpc"
+        android:background="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/upcCampus"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/headerUpc"
+        android:id="@+id/campusPhoto" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Happy birthday gmi2" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/androidparty"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="Universidad Peruana de Ciencias Aplicadas"
+        android:textSize="19sp"
+        android:layout_below="@+id/campusPhoto"
+        android:fontFamily="casual"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="From , Enzoftware"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"/>
+        android:textSize="36sp"
+        android:fontFamily="casual"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="22dp" />
 
 </RelativeLayout>
