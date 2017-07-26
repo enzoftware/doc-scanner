@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udc.enzoftware.myapplication.MainActivity">
+
+    <!-- SCOREBOARD -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:id="@+id/horizontalFather">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/TeamA"
+            android:layout_weight="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="Team A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:id="@+id/scoreTeamA"
+                android:textSize="75sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:gravity="center"
+                android:textSize="95sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:id="@+id/TeamB">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:text="Team B"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:id="@+id/scoreTeamB"
+                android:textSize="75sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- BUTTONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/touchdownA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="+6" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:text="TOUCHDOWN"
+                android:paddingLeft="17sp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/touchdownB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:text="+6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fieldGoldA"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="FIELD GOLD" />
+
+            <Button
+                android:id="@+id/fieldGoldB"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/extraPointA2"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/extraPointA1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="EXTRA POINT" />
+
+            <Button
+                android:id="@+id/extraPointB2"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/extraPointB1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/safetyA"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="SAFETY" />
+
+            <Button
+                android:id="@+id/safetyB"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="changeScore"
+                android:text="+2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- RESET BUTTON -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="changeScore"
+            android:text="RESET" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
