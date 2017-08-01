@@ -4,41 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.udc.enzoftware.quizapp.MainActivity">
+    tools:context="com.udc.enzoftware.quizapp.MainActivity"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hola mundo"/>
+        <LinearLayout
+            android:id="@+id/question1_container"
+            style="@style/question_container_style">
 
+            <TextView
+                style="@style/question_style"
+                android:text="Question 1"/>
 
             <LinearLayout
-                android:layout_width="50dp"
-                android:layout_weight="5"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/canada"/>
+                <LinearLayout
+                    style="@style/radio_group_linear_layout_style">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/brasil"/>
+                </LinearLayout>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"/>
+                <LinearLayout
+                    style="@style/radio_group_linear_layout_style">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/canada"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/radio_group_linear_layout_style">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/uk"/>
+                </LinearLayout>
+
 
             </LinearLayout>
 
+            <RadioGroup
+                android:id="@+id/question1_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <RadioButton
+                    style="@style/question_radio_button_style"
+                    android:text=""
+                    android:id="@+id/question1_first_flag"/>
 
+                <RadioButton
+                    style="@style/question_radio_button_style"
+                    android:text=""
+                    android:id="@+id/question1_second_flag"/>
 
+                <RadioButton
+                    style="@style/question_radio_button_style"
+                    android:text=""
+                    android:id="@+id/question1_third_flag"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
 
     </LinearLayout>
+
 </ScrollView>
