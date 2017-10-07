@@ -1,2 +1,3 @@
-# Android developer course - UDACITY
-Repository for android developer course from Udacity
+# Android basics developer course - UDACITY
+---
+<img src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Android.png" />
