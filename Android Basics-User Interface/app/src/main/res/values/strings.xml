@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Birthday Card</string>
+    <string name="app_name">My presentation card</string>
+    <string name="description">Student of software engineer at UPC-Peru. Kotlin Lover</string>
+    <string name="enzoftware">enzoftware</string>
 </resources>
