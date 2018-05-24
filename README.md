@@ -10,4 +10,4 @@ Just install all the libs and run :
 python scan.py --image example_images/your_image_here
 ```
 
-Feel free to contribute
+Feel free to contribute. :sunglasses:
